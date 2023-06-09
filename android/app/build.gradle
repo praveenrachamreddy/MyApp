@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.example.myapp"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    // Add any additional dependencies as needed
+}
+
+flutter {
+    source '../..'
+}
+
+
